@@ -1,0 +1,216 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,900&display=swap');
+
+
+
+
+
+body {
+
+    font-family: 'Roboto';
+    margin: auto
+}
+
+
+main {
+    background-color: #ebebeb;
+    width: 90%;
+    margin: auto;
+    
+    
+}
+
+.main-header {
+    background-color: #EAC926;
+    padding: 20px;
+
+    
+}
+
+.main-navbar {
+    display: flex;
+    flex-wrap: wrap;    
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.main-navbar ul {
+    display: flex;
+    text-decoration: none;
+}
+
+.main-navbar li {
+    
+    margin: 0 5px;
+  
+    text-decoration: none;
+    
+}
+.main-navbar a {
+    text-decoration: none;
+}
+
+.nav-list li {
+    text-decoration: none;
+}
+
+.burger-menu {
+justify-content: center;
+background-color:  #032064;
+color: #ffffff;
+font-size: 20px;
+width: 40px;
+height: 40px;
+margin: auto;
+border-radius: 8px;
+display: flex;
+align-items: center;
+}
+
+.copy-header {
+    font-weight: 400;
+    text-align: center;
+}
+
+.titulares h3 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.product-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    border: #ebebeb 1px solid;
+    
+}
+
+.product  {
+    margin:10px;
+    padding: 10px;
+    
+
+}
+.DescripcionProductos {
+display: flex;
+margin: 2px;
+border: #ebebeb 1px solid;
+background-color: white;
+flex-direction: column;
+
+}
+
+.DescripcionProductos i {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: initial right;   
+    color:  #39b54a
+}  
+
+.DescripcionProductos p {
+    display: block;
+    flex-direction: row;
+    
+   
+}
+
+.DescripcionProductos h2 {
+display: block;
+width: 30% 70%;
+flex-direction: row;
+}
+
+.DescripcionProductos span {
+    color:  #39b54a;
+    margin : 10px;
+}
+
+/*FOOTER*/
+.pie-pagina {
+    text-align: center;
+     background-color: #FFF; 
+     
+  
+}
+
+footer i {
+    color: #1259c3;
+    font-size: 2em;
+    margin-bottom: 10px;
+    padding-top: 10px;
+
+}
+
+footer ul li {
+    text-align: center;
+  
+}
+
+footer p {
+    text-align: left;
+}
+
+/* formulario de register */
+
+form {
+    position: absolute;
+    width  : 500px;
+    height : 498px;
+    margin : 20px;
+    padding: 50px;
+    background: rgb(223, 224, 218);
+    text-align: left;
+    justify-content: space-between;
+    
+    
+ }
+
+.TituloFormulario h3 {
+font-size: 23px;
+font-weight: bold;
+text-align: center;
+background-color: khaki;
+}
+
+
+/* Nav para mobile */
+ 
+@media (min-width : 361px) {
+.DescripcionProductos {
+    display: none;
+}
+.main-navbar {
+    display: none
+}
+}
+ 
+
+/* Nav para desktop */
+
+@media (min-width: 769px) {
+body {
+    box-shadow: 0px 0px 10px rgb(100,100,100);
+}
+.DescripcionProductos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-navbar {
+    display: flex;
+  
+}
+.burger-menu {
+    display: none
+}
+}
